@@ -1,0 +1,64 @@
+class gestures:
+  def Happy(self):
+    print("\nI'am Smiling")
+
+  def Nod(self):
+    print("\nI'am Nod")
+
+  def Frown(self):
+    print("\nI'am Frown")
+
+  def Blink(self):
+    print("\nI'am Blink")
+
+obj = gestures()
+choice = 1
+while choice != 0:
+    print("RELATIONAL AGENT \n")
+    print("1. HAPPY\n")
+    print("2. POSITIVE\n")
+    print("3. NEGATIVE\n")
+    print("4. UNSURE\n")
+    print("5. NEUTRAL\n")
+    print("6. SAD\n")
+    print("7. NONE\n")
+    print("8. Amused")
+    print("9. Blissful")
+    print("10. Calm")
+    print("11. Cheerful")
+    print("12. Dreamy")
+
+    for i in range (3):
+      choice = int(input("Enter your Mood for today:"))
+    if choice == 1 and choice == 2 or choice == 3:
+      print(obj.Happy())
+      break
+
+    elif choice == 1 and choice == 4 or choice == 7:
+      print(obj.Nod())
+      break
+
+    elif choice == 4 and choice == 5 or choice == 7:
+      print(obj.Frown())
+      break
+
+    elif choice == 4 and choice == 3 or choice == 7:
+      print(obj.Blink())
+      break
+    
+    elif choice == 6 or choice == 7 or choice == 7:
+      print("I'm Sad")
+      break
+    elif choice == 2 or choice == 1 or choice == 8:
+      print("I'm Satishfied")
+      break
+    elif choice == 2 or choice == 8 or choice == 9:
+      print("I'm Blessed")
+      break
+    elif choice == 10 or choice == 2 or choice == 8:
+      print("I'm hopeful")
+      break
+
+    else:
+        print("Invalid choice")
+        break
